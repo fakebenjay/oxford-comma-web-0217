@@ -7,6 +7,9 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.size > 2
     array[-1].prepend("and ")
+##prepend is the opposite of append, it adds something to the start of a string
     array.join(", ")
   end
 end
+
+oxford_comma(array)
